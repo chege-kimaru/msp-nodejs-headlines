@@ -1,0 +1,28 @@
+<h2 style="padding-top: 16px;" class="text-center">Create new headline</h2>
+<hr style="width: 5%; border: 1px solid" class="text-primary"/>
+
+<div class="container">
+    <form enctype="multipart/form-data" class="ui form" action="/headlines" method="post">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <div class="field">
+            <label>Title</label>
+            <input required type="text" name="title" placeholder="Title">
+        </div>
+        <div class="field">
+            <label>Author</label>
+            <input required type="text" name="author" placeholder="Author">
+        </div>
+        <div class="field">
+            <label>About</label>
+            <textarea required name="about" rows="2"></textarea>
+        </div>
+        <div class="field">
+            <label>Image</label>
+            <input required type="file" name="image" placeholder="Image">
+        </div>
+        <button type="submit" class="ui positive right labeled icon button">
+            Create
+            <i class="checkmark icon"></i>
+        </button>
+    </form>
+</div>

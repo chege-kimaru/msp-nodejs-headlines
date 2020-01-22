@@ -1,0 +1,12 @@
+<h2 style="padding-top: 16px;" class="text-center">All Headlines</h2>
+<hr style="width: 5%; border: 1px solid" class="text-primary"/>
+
+<div class="container">
+    <div class="row">
+        {{#each headlines }}
+            {{> headline }}
+        {{/each}}
+
+    </div>
+    {{> headline-view }}
+</div>

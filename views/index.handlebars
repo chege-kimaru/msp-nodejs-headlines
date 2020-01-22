@@ -1,0 +1,25 @@
+<div class="jumbotron">
+    <h1 class="display-4">MSP Headlines!</h1>
+    <p class="lead">Receive the latest news here at MSP headlines. All sources are verified and up
+        to date. Fell free to navigate through our large repository of headlines or search for your
+        topics</p>
+    <hr class="my-4">
+    <p>Click this button to add a new headline.</p>
+    <a class="btn btn-info btn-lg" href="#" role="button">Create Headline</a>
+</div>
+
+<h2 class="text-center">Featured Headlines</h2>
+<hr style="width: 10%; border: 1px solid" class="text-primary"/>
+
+<div class="container">
+    <div class="row">
+        {{#each headlines}}
+            {{> headline }}
+        {{/each}}
+
+    </div>
+    <a href="/headlines" class="btn btn-info">More headlines .....</a>
+    {{> headline-view }}
+</div>
+
+

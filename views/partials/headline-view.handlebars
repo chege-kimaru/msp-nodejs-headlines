@@ -1,0 +1,46 @@
+<div class="view ui modal">
+    <i class="close icon"></i>
+    <div class="header h_title">
+
+    </div>
+    <div class="image content">
+        <div class="ui img-rounded medium image">
+            <img class="h_image" src="">
+        </div>
+        <div class="description">
+            <div class="ui header h_title"></div>
+            <p class="h_about"></p>
+            <p class="h_author"></p>
+            <p class="h_location"></p>
+            <p class="h_date"></p>
+
+            <form id="updateForm" class="ui form" onsubmit="update(event)">
+                <div class="field">
+                    <label>Title</label>
+                    <input class="h_title" type="text" name="title" placeholder="Title">
+                </div>
+                <div class="field">
+                    <label>Author</label>
+                    <input class="h_author" type="text" name="author" placeholder="Author">
+                </div>
+                <div class="field">
+                    <label>About</label>
+                    <textarea class="h_about" rows="2"></textarea>
+                </div>
+                <button type="submit" class="ui positive right labeled icon button update-btn">
+                    Edit
+                    <i class="checkmark icon"></i>
+                </button>
+                <button onclick="del()" class="ui negative right labeled icon button">
+                    Delete
+                    <i class="delete icon"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui black deny button">
+            close
+        </div>
+    </div>
+</div>
