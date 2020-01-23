@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 // Option 1: Passing parameters separately
-const sequelize = new Sequelize(process.env.db, process.env.DB_USER, process.env.DB_PASS, {
+const sequelize = new Sequelize(process.env.DB, process.env.DB_USER, process.env.DB_PASS, {
     host: process.env.DB_HOST,
     dialect: 'mysql',/* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
     ssl: true,
